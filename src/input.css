@@ -23,6 +23,8 @@
     --light: poppinsl, sans-serif;
     --semibold: poppinssb
 }
-div {
+.cx {
     margin-top: 20px;
+    background-color: white;
+  
 }
