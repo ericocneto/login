@@ -14,19 +14,20 @@
             <section id="logincard" class="p-5 bg-[var(--fundocard)] text-white rounded-3xl w-[400px] h-[400px] backdrop-blur-xs backdrop-grayscale flex flex-col justify-center items-center">
                 <h2 class="text-center text-[2em] font-(family-name:--bold)">Login</h2>
                 <p class="cx w-75 h-6 flex justify-end">
-                    <span class="w-100 flex justify-center items-center"><img src="assets/icons/person.svg" alt=""></span>
-                        <input type="text" name="" id="iuser" placeholder="usuário" class='bg-white rounded-[4px] text-black w-65' autocomplete="username">
+                    <span class="w-100 flex justify-center items-center bg-[var(--fundocard)]"><img src="assets/icons/person.svg" alt=""></span>
+                        <input type="text" name="" id="iuser" placeholder="usuário" class='bg-[var(--fundocard)]  text-black w-65' autocomplete="username">
                 </p>
               <p class="cx w-75 flex justify-end h-6">
-                    <span class="w-100 flex justify-center items-center"><img src="assets/icons/lock.svg" alt=""></span>
-                        <input type="password" name="" id="iuser" placeholder="senha" class='bg-white rounded-[4px] text-black w-65' autocomplete="current-password">
+                    <span class="w-100 flex justify-center items-center bg-[var(--fundocard)]"><img src="assets/icons/lock.svg" alt=""></span>
+                        <input type="password" name="" id="iuser" placeholder="senha" class='bg-[var(--fundocard)]  text-black w-65 ' autocomplete="current-password">
                 </p>
                 <p class="m-4 self-center">
-                    <input type="checkbox" name="" id="icheck">
-                    <label class="mr-12" for="icheck">lembrar-me</label>
+                    <input type="checkbox" name="" id="icheck" class="accent-cyan-200">
+                    <label class="mr-12" for="icheck" >lembrar-me</label>
                     <a href="#" class="font-(family-name:--light) hover:underline hover:text-cyan-200">esqueci a senha</a>
                 </p>
-                <input class='cursor-pointer text-black bg-white w-75 h-[30px] hover:bg-cyan-200 font-(family-name:--semibold) rounded-[4px] transition ease-in-out cursor-pointer hover:scale-[1.05]'  type="submit" value="entrar">
+                <input class='cursor-pointer text-black bg-white w-75 h-[30px] hover:bg-cyan-200 font-(family-name:--semibold) rounded-[999px] transition ease-in-out cursor-pointer hover:scale-[1.03]'  type="submit" value="entrar">
+                <p class="pt-4">não tem uma conta? <span class="font-(family-name:--semibold) hover:underline"><a href="#">registre-se</a></span></p>
             </section>
         </form>
     </main>

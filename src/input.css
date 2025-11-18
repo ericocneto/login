@@ -23,8 +23,9 @@
     --light: poppinsl, sans-serif;
     --semibold: poppinssb
 }
+
 .cx {
     margin-top: 20px;
     background-color: white;
-  
+    border-radius: 4px;
 }
