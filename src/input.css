@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@font-face {
+    font-family: poppins;
+    src: url(../assets/Poppins/Poppins-Black.ttf);
+}
+body {
+    font-family: poppins, sans-serif;
+}
+:root {
+    --fundocard: rgba(8, 78, 99, 0.527);
+    --textshadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+}
+div {
+    margin-top: 20px;
+}
