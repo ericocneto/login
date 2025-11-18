@@ -6,25 +6,28 @@
     <title>Login</title>
     <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class="bg-[url(/assets/bg.jpg)] bg-fixed bg-center bg-no-repeat bg-cover">
+<body class="bg-[url(/assets/bg.jpg)] bg-fixed bg-center bg-no-repeat bg-cover font-(family-name:--normal)">
 
     <main class="flex justify-center items-center w-screen h-screen">
-        <section id="logincard" class="p-5 bg-[var(--fundocard)] text-white rounded-3xl w-[400px] h-[400px] backdrop-blur-xs backdrop-grayscale">
-            <h2 class="text-center text-[2em] text-shadow-[var(--textshadow)]">Login</h2>
-            <div >
-                <label for="iuser"><span></span></label>
-                    <input type="text" name="" id="iuser" placeholder="usuário" class='bg-white rounded-[4px] indent-8 text-black w-75''>
-            </div>
-            <div>
-                <label for="isenha"><span></span></label>
-                    <input type="password" name="" id="iuser" placeholder="senha" class='bg-white rounded-[4px] indent-8 text-black w-75''>
-            </div>
-            <p class="mt-4">
-                <input type="checkbox" name="" id="icheck">
-                <label for="icheck">lembrar-me</label>
-            </p>
-            <input class='cursor-pointer text-black bg-white w-75 h-[30px]'  type="submit" value="entrar">
-        </section>
+        <form action="entrar.php" autocomplete="on" method="post">
+            <section id="logincard" class="p-5 bg-[var(--fundocard)] text-white rounded-3xl w-[400px] h-[400px] backdrop-blur-xs backdrop-grayscale flex flex-col justify-center items-center">
+                <h2 class="text-center text-[2em] font-(family-name:--bold)">Login</h2>
+                <div >
+                    <label for="iuser"><span></span></label>
+                        <input type="text" name="" id="iuser" placeholder="usuário" class='bg-white rounded-[4px] indent-8 text-black w-75' autocomplete="username">
+                </div>
+                <div>
+                    <label for="isenha"><span></span></label>
+                        <input type="password" name="" id="iuser" placeholder="senha" class='bg-white rounded-[4px] indent-8 text-black w-75' autocomplete="current-password">
+                </div>
+                <p class="m-4 self-center">
+                    <input type="checkbox" name="" id="icheck">
+                    <label class="mr-12" for="icheck">lembrar-me</label>
+                    <a href="#" class="font-(family-name:--light) hover:underline hover:text-cyan-200">esqueci a senha</a>
+                </p>
+                <input class='cursor-pointer text-black bg-white w-75 h-[30px] hover:bg-cyan-200 font-(family-name:--semibold) rounded-[4px] transition delay-50 duration-100 ease-in-out'  type="submit" value="entrar">
+            </section>
+        </form>
     </main>
     <script src="src/script.js"></script>
 </body>

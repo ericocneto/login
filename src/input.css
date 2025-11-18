@@ -1,14 +1,27 @@
 @import "tailwindcss";
 @font-face {
-    font-family: poppins;
-    src: url(../assets/Poppins/Poppins-Black.ttf);
+    font-family: poppinsm;
+    src: url(../assets/Poppins/Poppins-Regular.ttf);
 }
-body {
-    font-family: poppins, sans-serif;
+@font-face {
+    font-family: poppinsb;
+    src: url(../assets/Poppins/Poppins-Bold.ttf);
 }
+@font-face {
+    font-family: poppinsl;
+    src: url(../assets/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: poppinssb;
+    src: url(../assets/Poppins/Poppins-SemiBold.ttf);
+}
+
 :root {
     --fundocard: rgba(8, 78, 99, 0.527);
-    --textshadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+    --normal: poppinsm, sans-serif;
+    --bold: poppinsb, sans-serif;
+    --light: poppinsl, sans-serif;
+    --semibold: poppinssb
 }
 div {
     margin-top: 20px;
